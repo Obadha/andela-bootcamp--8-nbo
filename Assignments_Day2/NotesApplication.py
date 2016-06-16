@@ -4,11 +4,11 @@ class NotesApplication(object):
 		self.notes_list = []
 
 	def create (self,note_content):
-		notes_list.append(note_content)
+		return self.notes_list.append(note_content)
 
 	def list(self):
 		note_id=0
-		for x in self.notes:
+		for x in self.notes_list:
 			print "Note ID:" + note_id
 			print notes_list[note_content]
 			print "By Author" + author
@@ -20,7 +20,7 @@ class NotesApplication(object):
 		i=0
 		print "Showing results for", search_text
 		
-		for i in self.notes:
+		for i in self.notes_list:
 			if (x.find(search_text)>1):
 				print "Note ID:", i
 				print x
@@ -37,7 +37,3 @@ class NotesApplication(object):
 			print "Enter valid id"
 		else:
 			self.notes_list[note_id] = new_content
-
-
-
-
