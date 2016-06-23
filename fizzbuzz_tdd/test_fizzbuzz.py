@@ -16,7 +16,8 @@ class FizzBuzzTest(unittest.TestCase): #test case is inside unittest
 		self.assertEqual(fizzbuzz.fizz_buzz(5),"buzz")
 
 
-
+if __name__ == '__main__':
+	unittest.main()
 
 
 

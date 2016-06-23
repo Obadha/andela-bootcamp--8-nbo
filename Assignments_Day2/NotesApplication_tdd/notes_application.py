@@ -3,8 +3,9 @@ class NotesApplication(object):
 		self.author = author
 		self.notes_list = []
 
-	def create (self,note_content):
-		return self.notes_list.append(note_content)
+	def create (self,note_content): #takes the note content as the parameter and adds it to the notes list of the object.
+		self.notes_list.append(note_content)
+		return self.notes_list
 
 	def list(self):
 		note_id=0
