@@ -9,22 +9,16 @@ def get_primes(n):
 				isPrime = False
 				break
 			
-			else:
-				primes.append(current_no)
-				break
-			
-		# if isPrime:
-		# 	primes.append(current_no)
-		'''the above can be used in place of the else e statement
-		'''
-				
+		if isPrime:
+			primes.append(current_no)
+		
 		current_no += 1
 			
 		if len(primes) == n:
 			break
 	return primes
 	
-print get_primes (8)
+print get_primes (20)
 # this will return a list of the first 8 prime numbers.
 
 				
